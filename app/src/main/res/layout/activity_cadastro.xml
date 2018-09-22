@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".activity_cadastro">
+
+    <TextView
+        android:id="@+id/cadastroEncomenda"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Cadastro"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/codigoDeRastreioT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="118dp"
+        android:text="Código de Rastreio"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/codigoDeRastreioE"
+        android:hint="Entre com seu código"
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="161dp" />
+
+    <TextView
+        android:id="@+id/nomeDoPacoteT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="Nome do Pacote"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/nomeDoPacoteE"
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="170dp"
+        android:hint="Coloque um nome para sua encomenda" />
+
+    <Button
+        android:id="@+id/botaoCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="65dp"
+        android:layout_marginEnd="67dp"
+        android:elevation="05dp"
+        android:padding="10dp"
+        android:text="Cancelar" />
+
+    <Button
+        android:id="@+id/botaoConfirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/botaoCancelar"
+        android:layout_marginStart="70dp"
+        android:elevation="05dp"
+        android:padding="10dp"
+        android:text="Confirmar"
+        tools:ignore="UnknownId" />
+
+
+</RelativeLayout>

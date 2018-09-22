@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".principal"
+    android:background="@color/colorBackground">
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Digite o código de rastreio"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="368dp"
+        android:layout_height="350dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/botaoFiltrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="Filtrar"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="447dp"
+        tools:ignore="MissingConstraints" />
+
+    <FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="53dp"
+        android:layout_height="49dp"
+        android:clickable="true"
+        android:text="+"
+        app:backgroundTint="?attr/colorBackgroundFloating"
+        app:srcCompat="?android:attr/statusBarColor"
+        tools:layout_editor_absoluteX="252dp"
+        tools:layout_editor_absoluteY="446dp"
+        tools:ignore="MissingConstraints,MissingPrefix" />
+
+</android.support.constraint.ConstraintLayout>
