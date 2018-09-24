@@ -1,10 +1,12 @@
-package example.aula_01.com.projetoxtrackteste;
+package example.aula_01.com.projetoxtrackteste.activities;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.WindowManager;
+
+import example.aula_01.com.projetoxtrackteste.R;
 
 public class splash extends AppCompatActivity {
 
