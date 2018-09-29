@@ -1,4 +1,4 @@
-package example.aula_01.com.projetoxtrackteste.activities;
+package example.aula_01.com.projetoxtrackteste.activity;
 
 import android.content.Intent;
 import android.os.Bundle;

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".activity.MainActivity">
+
+    <EditText
+        android:id="@+id/senhaCadastroUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="455dp" />
+
+    <EditText
+        android:id="@+id/emailCadastroUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Username ou email"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="237dp" />
+
+    <TextView
+        android:id="@+id/campoSenhaUsuario"
+        android:layout_width="170dp"
+        android:layout_height="26dp"
+        android:text="Senha"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="352dp" />
+
+    <TextView
+        android:id="@+id/campoEmailUsuario"
+        android:layout_width="170dp"
+        android:layout_height="28dp"
+        android:text="Email"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="113dp" />
+
+
+    <Button
+        android:id="@+id/botaoCadastrarUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Cadastrar"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="347dp"
+        tools:layout_editor_absoluteY="645dp" />
+
+</android.support.constraint.ConstraintLayout>

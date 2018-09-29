@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBackground"
-    tools:context=".activities.MainActivity">
+    tools:context=".activity.MainActivity">
 
     <ImageView
         android:id="@+id/imagemFacebook"
@@ -17,7 +17,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/senhaUsuario"
-        app:layout_constraintVertical_bias="0.608"
+        app:layout_constraintVertical_bias="0.792"
         app:srcCompat="@drawable/facebook" />
 
     <ImageView
@@ -30,10 +30,10 @@
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintHorizontal_bias="0.579"
         app:layout_constraintStart_toEndOf="@+id/imagemFacebook"
         app:layout_constraintTop_toBottomOf="@+id/senhaUsuario"
-        app:layout_constraintVertical_bias="0.623"
+        app:layout_constraintVertical_bias="0.761"
         app:srcCompat="@drawable/google"
         tools:ignore="UnknownId" />
 
@@ -79,6 +79,17 @@
         app:layout_constraintTop_toBottomOf="@+id/emailUsuario" />
 
     <TextView
+        android:id="@+id/campoCadastroUsuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Não tem conta? Cadastre-se!"
+        android:textColor="@color/colorWhite"
+        android:onClick="abrirCadastroUsuario"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="260dp" />
+
+
+    <TextView
         android:id="@+id/campoOu"
         android:layout_width="52dp"
         android:layout_height="41dp"
@@ -91,9 +102,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/botaoLogin"
-        app:layout_constraintVertical_bias="0.118"
-        tools:layout_editor_absoluteX="166dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.312"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="166dp" />
 
     <Button
         android:id="@+id/botaoLogin"
@@ -110,5 +121,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/senhaUsuario" />
+
+
 
 </android.support.constraint.ConstraintLayout>
