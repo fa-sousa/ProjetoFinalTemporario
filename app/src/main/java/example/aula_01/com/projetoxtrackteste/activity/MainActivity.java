@@ -16,6 +16,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import example.aula_01.com.projetoxtrackteste.R;
 import example.aula_01.com.projetoxtrackteste.config.ConfiguracaoFirebase;
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText email;
     private EditText senha;
-    private Button botaoLogar;
+    private Button botaoLogin;
     private Usuario usuario;
     private FirebaseAuth autenticacao;
 
@@ -34,11 +35,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        verificarUsuarioLogado();
+
         email = (EditText) findViewById(R.id.emailUsuario);
         senha = (EditText) findViewById(R.id.senhaUsuario);
-        botaoLogar = (Button) findViewById(R.id.botaoLogin);
+        botaoLogin = (Button) findViewById(R.id.botaoLogin);
 
-        botaoLogar.setOnClickListener(new View.OnClickListener() {
+        botaoLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -50,8 +53,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
     }
+
+    private void verificarUsuarioLogado(){
+
+        autenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
+        if (autenticacao.getCurrentUser() != null){
+            abrirTelaPrincipal();
+
+        }
+    }
+
 
     private void validarLogin(){
 
@@ -70,6 +82,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void abrirTelaPrincipal(){
+        Intent intent = new Intent(MainActivity.this,principal.class);
+        startActivity(intent);
+        finish();
     }
 
 

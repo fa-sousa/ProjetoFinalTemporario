@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,52 +11,66 @@
         android:id="@+id/senhaCadastroUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/campoSenhaUsuario"
+        android:layout_marginTop="-229dp"
         android:ems="10"
-        android:inputType="textPassword"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="455dp" />
+        android:inputType="textPassword" />
 
     <EditText
         android:id="@+id/emailCadastroUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="190dp"
         android:ems="10"
         android:hint="Username ou email"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="237dp" />
+        android:inputType="textPersonName" />
 
     <TextView
         android:id="@+id/campoSenhaUsuario"
         android:layout_width="170dp"
         android:layout_height="26dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="229dp"
         android:text="Senha"
         android:textSize="20sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="352dp" />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/campoEmailUsuario"
         android:layout_width="170dp"
         android:layout_height="28dp"
+        android:layout_above="@+id/emailCadastroUsuario"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-190dp"
         android:text="Email"
         android:textSize="20sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="113dp" />
+        android:textStyle="bold" />
 
 
     <Button
         android:id="@+id/botaoCadastrarUsuario"
         android:layout_width="match_parent"
         android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="102dp"
         android:background="@color/colorPrimaryDark"
         android:text="Cadastrar"
         android:textAlignment="center"
         android:textSize="18sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="347dp"
-        tools:layout_editor_absoluteY="645dp" />
+        android:textStyle="bold" />
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="146dp"
+        android:layout_height="123dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        app:srcCompat="@drawable/x" />
+
+</RelativeLayout>

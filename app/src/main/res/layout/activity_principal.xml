@@ -39,27 +39,31 @@
 
     <Button
         android:id="@+id/botaoFiltrar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="105dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
         android:background="@color/colorPrimaryDark"
         android:text="Filtrar"
         android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="447dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
 
-    <FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:layout_width="53dp"
-        android:layout_height="49dp"
-        android:clickable="true"
-        android:text="+"
-        app:backgroundTint="?attr/colorBackgroundFloating"
-        app:srcCompat="?android:attr/statusBarColor"
-        tools:layout_editor_absoluteX="252dp"
-        tools:layout_editor_absoluteY="446dp"
-        tools:ignore="MissingConstraints,MissingPrefix" />
+    <Button
+        android:id="@+id/botaoSair"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="72dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Sair"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
 
 </android.support.constraint.ConstraintLayout>
