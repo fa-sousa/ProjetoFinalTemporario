@@ -16,6 +16,7 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.FirebaseDatabase;
 
 import example.aula_01.com.projetoxtrackteste.R;
 import example.aula_01.com.projetoxtrackteste.config.ConfiguracaoFirebase;
@@ -27,8 +28,8 @@ public class cadastroUsuario extends AppCompatActivity {
     private EditText senha;
     private Button botaoCadastrar;
     private Usuario usuario;
-
     private FirebaseAuth autenticacao;
+    private FirebaseDatabase firebaseReferencia;
 
     @Override
     protected void onCreate(Bundle savedInstance) {
@@ -46,6 +47,7 @@ public class cadastroUsuario extends AppCompatActivity {
                 usuario.setEmail(email.getText().toString());
                 usuario.setSenha(senha.getText().toString());
                 cadastrarUsuario();
+
             }
         });
     }
